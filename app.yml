@@ -5,7 +5,7 @@ application: sample-django
 version: 1
 runtime: python27
 api_version: 1
-threadsafe: yes
+threadsafe: true
 
 handlers:
 
@@ -18,7 +18,7 @@ handlers:
 libraries:
 
 - name: django
-  version: "latest"
+  version: "1.5"
 
 env_variables:
   DJANGO_SETTINGS_MODULE: "sample_project.settings"
