@@ -1,0 +1,8 @@
+.backimg {
+	 background-image: url(../images/1.jpg);
+	 position: absolute;
+	 left: 0px;
+	 right: auto;
+	 /*width: 1500px;
+	 height: 200px;*/
+}
