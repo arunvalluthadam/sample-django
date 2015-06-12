@@ -1,6 +1,9 @@
 # command for run this app : 
 #         $ ~/google_appEngine/google_appengine/dev_appserver.py django_test/sample_project/
 
+# command for deploy app :
+#		  $ ~/google_appEngine/google_appengine/appcfg.py -A sample-django update django_test/sample_project/
+
 application: sample-django
 version: 1
 runtime: python27

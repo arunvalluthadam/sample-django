@@ -1,3 +1,12 @@
+{% load nav_active %}
+
+{% url 'home' as home %}
+{% url 'quick_text' as quick_text %}
+{% url 'archives' as archives %}
+{% url 'category' as category %}
+{% url 'signup' as signup %}
+{% url 'signin' as signin %}
+
 <!DOCTYPE html>
 <!-- saved from url=(0047)http://getbootstrap.com/examples/justified-nav/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -37,12 +46,12 @@
       <div class="masthead">
         <nav>
           <ul class="nav nav-justified">
-            <li class=""><a href="/home">Home</a></li>
-            <li class=""><a href="/quick-text">Quick Text</a></li>
-            <li class=""><a href="/archives">Archives</a></li>
-            <li class=""><a href="/category">Category</a></li>
-            <li class=""><a href="/signup">Sign Up</a></li>
-            <li class=""><a href="/signin">Sign In</a></li>
+            <li class="{% active request home %}"><a href="{{ home }}">Home</a></li>
+            <li class="{% active request quick_text %}"><a href="{{ quick_text }}">Quick Text</a></li>
+            <li class="{% active request archives %}"><a href="{{ archives }}">Archives</a></li>
+            <li class="{% active request category %}"><a href="{{ category }}">Category</a></li>
+            <li class="{% active request signup %}"><a href="{{ signup }}">Sign Up</a></li>
+            <li class="{% active request signin %}"><a href="{{ signin }}">Sign In</a></li>
           </ul>
         </nav>
       </div>
