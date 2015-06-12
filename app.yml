@@ -18,7 +18,7 @@ handlers:
 libraries:
 
 - name: django
-  version: "1.5"
+  version: "latest"
 
 env_variables:
   DJANGO_SETTINGS_MODULE: "sample_project.settings"
